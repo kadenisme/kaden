@@ -1,0 +1,28 @@
+from djitellopy import tello
+from time import sleep
+
+tello = tello.Tello()
+tello.connect()
+# take off
+tello.takeoff()
+sleep(2)
+tello.move_up(100)
+#move around room
+move_forward(self, 700)
+sleep(2)
+rotate_counter_clockwise(self, 90)
+sleep(2)
+move_forward(self, 300)
+sleep(2)
+rotet_counter_clockwise(self, 90)
+sleep(2)
+move_forward(self, 700)
+sleep(2)
+rotate_counter_clockwise(self, 90)
+sleep(2)
+move_forward(self, 300)
+sleep(2)
+# landing
+tello.move_down(100)
+sleep(2)
+tello.land()
